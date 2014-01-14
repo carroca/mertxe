@@ -4,4 +4,5 @@ $config = array(
   'username' => 'username',
   'password' => 'password',
   'host' => 'localhost',
+  'nodopagina' => 5,
 );
