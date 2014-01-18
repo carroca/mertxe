@@ -3,22 +3,23 @@ class Nodo {
 
   private $nid;
   private $nodo = array();
+  private $db;
   
-  public function __construct($n = "1"){
-    include_once('database.php');
-    $db = new Database;
-    $this->nid = $n;
+  public function __construct(){
+    include_once "database.php";
+    $this->db = new Database;
+    $this->nid = 1;
   }
-  
+
   public function obtenerDatos(){
-    $db->setFields("*");
-    $db->setTables("node");
-    $db->setCondition("id = $nid");
-    return db->exeSelect();
+    $this->db->setFields("*");
+    $this->db->setTables("nodo");
+    $this->db->setCondition("id = '$this->nid'");
+    return $this->db->exeSelect();
   }
   
-  public function setId(){
-    
+  public function setId($nid = "1"){
+    $this->nid = $nid;
   }
 
 }

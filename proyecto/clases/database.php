@@ -73,12 +73,10 @@ class Database {
   * Implements __construct().
   */
   public function __construct() {
-
-    include_once('../config.php');
-    $this->host = $config['host'];
-	$this->user = $config['username'];
-	$this->pass = $config['password'];
-	$this->db = $config['database'];
+    $this->host = "localhost";
+	$this->user = "dbuproyecto";
+	$this->pass = "A.bc1212";
+	$this->db = "dbproyecto";
 	$this->open();
   }
 

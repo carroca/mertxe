@@ -1,0 +1,120 @@
+
+body {
+  background: url(21723_minecraft.jpg) no-repeat fixed center center rgba(0, 0, 0, 0);
+  width: 960px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 87.5%;
+  color:#2EFE2E
+}
+
+header {
+  background: rgba(152,152,152,0.8) ;
+  width: 100%;
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#sitename {
+	padding-left: 20px;
+	font-family: "minecraft";
+	margin-left: 100px;
+	margin-top: -100px;
+}
+
+article {
+  width: 600px;
+  height:auto;
+  background: rgba(152,152,152,0.8) ;
+  /*border: 15px;*/
+  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contenido {
+  background: rgba(152,152,152,0.8) ;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  padding-top: 20px;
+}
+
+aside {
+  background: rgba(152,152,152,1) ;
+  width: 260px;
+  position: relative;
+  left: 680px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+nav {
+  width: 100%;
+  background: rgba(152,152,152,0.8) ;
+}
+
+.sidebar-column {
+  background: rgba(152,152,152,0.8) ;
+  border-radius: 15px;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+  border: 15px;
+}
+
+.sidebar-column h3 {
+  text-align: center;
+}
+
+footer {
+  background: rgba(152,152,152,0.8) ;
+  width: 100%;
+  height: 80px;
+  clear: both;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#copyright {
+  float: right;
+  margin-right: 30px;
+}
+
+#contacto {
+ float: left;
+ margin-left: 30px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+
+.logo{
+  background: url(minecraft_icon_by_dharmainitiative2010-d33ca5p.png);
+  width:110px;
+  height:110px;
+  background-size: 100% 100%;
+}

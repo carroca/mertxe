@@ -1,24 +1,27 @@
 <?php
-<<<<<<< HEAD
   session_start();
-  if($p = $_GET["p"]){
-    $_SESSION["var"] = $p;
-    header("Location: php/paginas.php");
+  $chiv = false;
+  if(!empty($_GET["p"])){
+    $_SESSION["var"] = $_GET["p"];
+	$chiv = true;
+    header("Location: paginas.php");
   }
   
-  if($n = $_GET["n"]){
-    $_SESSION["var"] = $n;
-    header("Location: php/nodos.php");
+  if(!empty($_GET["n"])){
+    $_SESSION["var"] = $_GET["n"];
+	$chiv = true;
+    header("Location: nodos.php");
   }
   
-  if($t = $_GET["t"]){
-    $_SESSION["var"] = $t;
-    header("Location: php/taxonomias.php");
+  if(!empty($_GET["t"])){
+    $_SESSION["var"] = $_GET["t"];
+	$chiv = true;
+    header("Location: taxonomias.php");
+  }
+
+  if(!$chiv){
+    $_SESSION["var"] = 1;
+	$chiv = true;
+    header("Location: paginas.php");
   }
 ?>
-=======
-
-  echo "Hola mundo";
-  echo "Cambio que no me gusta";
-  ?>
->>>>>>> e7cf1b57555016312456131fcaef2b540b433609
